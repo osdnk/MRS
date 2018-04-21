@@ -23,7 +23,6 @@ program main
     real (kind = 4), allocatable :: A(:, :), X(:)
     real (kind = 4) :: h
 
-
     read(*, *) N
 
     h = 1. / N
@@ -43,11 +42,9 @@ program main
         A(i, i - 1) = 1 / (h * h)
     end do
 
-    do i = 1, N-1
+    do i = 1, N - 1
         A(i, i + 1) = 1 / (h * h)
     end do
-
-
 
     call eliminate(A, X, N)
 
