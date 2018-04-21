@@ -33,6 +33,7 @@ program main
     allocate(X(N))
     A(:, :) = 0
     X(:) = 0;
+    X(N) = 1;
 
     do i = 1, N
         A(i, i) = -2 / (h * h)
