@@ -4,7 +4,8 @@ module gauss
 contains
     subroutine eliminate (A, X, N)
         implicit none
-        real(kind = 4) :: J, I, C
+        integer (kind = 4) :: I, J
+        real(kind = 4) :: C
         integer (kind = 4), intent(in) :: N
         real(kind = 4), intent(inout) :: A(N, N), X(N)
         Do I = 1, N
