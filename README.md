@@ -17,7 +17,7 @@ make prod
 ```
 and then
 ```
-./MRS
+./FDM
 ```
 Then you need te enter the N values. 
 

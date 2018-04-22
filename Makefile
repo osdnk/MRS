@@ -1,4 +1,4 @@
 dev:
-	ifort -warn all -pedantic -fpp MRS.f90 gauss.f90 -o "MRS-dev" -check bounds
+	ifort -warn all -pedantic -fpp FDM.f90 gauss.f90 -o "FDM-dev" -check bounds
 prod:
-	ifort -warn all -pedantic -fpp MRS.f90 gauss.f90 -o "MRS" -check bounds
+	ifort -warn all -pedantic -fpp FDM.f90 gauss.f90 -o "FDM" -check bounds
