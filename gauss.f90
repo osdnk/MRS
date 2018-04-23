@@ -9,11 +9,11 @@ contains
         integer (kind = 4), intent(in) :: N
         real(kind = 4), intent(inout) :: A(N, N), X(N)
         Do I = 1, N
-            Do J = 1, N
+            Do J = 0, N
                 If (I /= J) then
-                    C = A(I, J) / A(I, I)
-                    A(:, J) = A(:, J) - C * A(:, I)
-                    X(J) = X(J) - C * X(I)
+                    C = A(I, J+1) / A(I, I + 1)
+                    A(:, J + 1) = A(:, J + 1) - C * A(:, I + 1)
+                    X(J + 1) = X(J + 1) - C * X(I + 1)
                 End If
             End Do
         End Do
