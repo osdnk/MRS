@@ -1,14 +1,18 @@
+#if !defined(PR)
+#define PR 4
+#endif
+
 program main
     use gauss
     implicit none
 
     character(len=32) :: arg
 
-    integer (kind = 4) :: i, N, ia
+    integer (kind = 8) :: i, N
 
 
-    real (kind = 4), allocatable :: A(:, :), X(:)
-    real (kind = 4) :: h
+    real (kind = PR), allocatable :: A(:, :), X(:)
+    real (kind = PR) :: h
 
     call get_command_argument(1, arg)
     !write(*,*) arg

@@ -1,13 +1,17 @@
+#if !defined(PR)
+#define PR 4
+#endif
+
 module gauss
     implicit none
 
 contains
     subroutine eliminate (A, X, N)
         implicit none
-        integer (kind = 4) :: I, J
-        real(kind = 4) :: C
-        integer (kind = 4), intent(in) :: N
-        real(kind = 4), intent(inout) :: A(N, N), X(N)
+        integer (kind = 8) :: I, J
+        real(kind = PR) :: C
+        integer (kind = 8), intent(in) :: N
+        real(kind = PR), intent(inout) :: A(N, N), X(N)
         Do I = 1, N
             Do J = 0, N
                 If (I /= J) then
