@@ -27,8 +27,7 @@ and then
 
 After changing precision sometimes you need to compile thing twice. I Don't know the reason
 
-What's N? It's explained [here](http://home.agh.edu.pl/~macwozni/fort/projekt1.pdf)
-It's density of splitting
+What's N? It's explained [here](http://home.agh.edu.pl/~macwozni/fort/projekt1.pdf). It's density of splitting
 
 ### Graphs
 Made in `jupyter notebook`
@@ -38,8 +37,7 @@ jupyter notebook
 ```
 in main directory
 
-You could watch given graphs or change something and generate them on your own
-However, then you need to have `matplotlib` to print beautiful graphs :tada:
+You could watch given graphs or change something and generate them on your own. However, then you need to have `matplotlib` to print beautiful graphs :tada:
 
 
 
