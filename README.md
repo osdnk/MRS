@@ -32,7 +32,7 @@ It's density of splitting
 
 ### Graphs
 Made in `jupyter notebook`
-Given you have installed `jupyter notebook`, type 
+Given you have installed `jupyter notebook` and all python3 related stuff, type 
 ```
 jupyter notebook
 ```
