@@ -40,4 +40,4 @@ in main directory
 You could watch given graphs or change something and generate them on your own. However, then you need to have `matplotlib` to print beautiful graphs :tada:
 
 
-
+Let you consider that I'm not a master in python so I suppose that everything I did could have been done better :dog:
