@@ -25,8 +25,6 @@ and then
 ./FDM16 N
 ```
 
-After changing precision sometimes you need to compile things twice. I Don't know the reason
-
 What's N? It's explained [here](http://home.agh.edu.pl/~macwozni/fort/projekt1.pdf). It's density of splitting
 
 ### Graphs
