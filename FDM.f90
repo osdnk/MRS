@@ -12,12 +12,14 @@ program main
     real (kind = 16) :: errors
     real (kind = PR), allocatable :: A(:, :), X(:)
     real (kind = PR) :: h
-    allocate(A(N-1, N))
-    allocate(X(N))
+
 
     ! get cmd
     call get_command_argument(1, arg)
     read(arg(1:len_trim(arg)),'(i8)') N
+
+    allocate(A(N-1, N))
+    allocate(X(N))
     h = 1. / N
 
     ! allocate
